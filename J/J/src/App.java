@@ -17,8 +17,10 @@ public class App {
         //System.setProperty("webdriver.chrome.driver", "C:\\Users\\cofre\\OneDrive - kingland.com\\Documents\\DOC\\py\\sele\\J\\J\\drivers\\chromedriver.exe");
         System.setProperty("webdriver.chrome.driver", "C:\\Program Files (x86)\\chromedriver.exe");
 
+        ChromeOptions co = new ChromeOptions();
+        co.addArguments("--remote-allow-origins=*");
 
-        WebDriver driver = new ChromeDriver();
+        WebDriver driver = new ChromeDriver(co);
 
         driver.get("https://opensource-demo.orangehrmlive.com/");
        
