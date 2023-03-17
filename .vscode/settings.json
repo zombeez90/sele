@@ -137,5 +137,6 @@
         "J/J/lib/slf4j-api-2.0.6.jar",
         "J/J/lib/slf4j-simple-2.0.5.jar",
         "J/J/lib/reactive-streams-1.0.4.jar"
-    ]
+    ],
+    "java.compile.nullAnalysis.mode": "automatic"
 }

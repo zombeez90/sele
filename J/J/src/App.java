@@ -6,6 +6,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 
 public class App {
@@ -13,9 +14,9 @@ public class App {
         
         System.out.println("hello world");
 
-        //System.setProperty("webdriver.chrome.driver", "C:\\Users\\Beez\\code\\sele\\J\\J\\drivers\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Beez\\code\\sele\\J\\J\\drivers\\chromedriver.exe");
         //System.setProperty("webdriver.chrome.driver", "C:\\Users\\cofre\\OneDrive - kingland.com\\Documents\\DOC\\py\\sele\\J\\J\\drivers\\chromedriver.exe");
-        System.setProperty("webdriver.chrome.driver", "C:\\Program Files (x86)\\chromedriver.exe");
+        //System.setProperty("webdriver.chrome.driver", "C:\\Program Files (x86)\\chromedriver.exe");
 
         ChromeOptions co = new ChromeOptions();
         co.addArguments("--remote-allow-origins=*");
