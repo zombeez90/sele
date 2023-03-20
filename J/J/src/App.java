@@ -1,4 +1,5 @@
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -6,6 +7,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 
 public class App {
@@ -18,12 +20,13 @@ public class App {
         System.setProperty("webdriver.chrome.driver", "C:\\Program Files (x86)\\chromedriver.exe");
 
 
-        WebDriver driver = new ChromeDriver();
+        ChromeOptions co=new ChromeOptions();
+        co.addArguments("--remote-allow-origins=*");
+
+        WebDriver driver = new ChromeDriver(co);
 
         driver.get("https://opensource-demo.orangehrmlive.com/");
-       
-        
-        Thread.sleep(5000);
+        Thread.sleep(3000);
 
         
         WebElement username = driver.findElement(By.cssSelector("[name = 'username']"));
