@@ -15,14 +15,21 @@ public class App {
         
         System.out.println("hello world");
 
-        //System.setProperty("webdriver.chrome.driver", "C:\\Users\\Beez\\code\\sele\\J\\J\\drivers\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Beez\\code\\sele\\J\\J\\drivers\\chromedriver.exe");
         //System.setProperty("webdriver.chrome.driver", "C:\\Users\\cofre\\OneDrive - kingland.com\\Documents\\DOC\\py\\sele\\J\\J\\drivers\\chromedriver.exe");
-        System.setProperty("webdriver.chrome.driver", "C:\\Program Files (x86)\\chromedriver.exe");
+        //System.setProperty("webdriver.chrome.driver", "C:\\Program Files (x86)\\chromedriver.exe");
+        
+        
+        ChromeOptions co = new ChromeOptions();
+        co.addArguments("--remote-allow-origins=*");
 
+<<<<<<< HEAD
 
         ChromeOptions co=new ChromeOptions();
         co.addArguments("--remote-allow-origins=*");
 
+=======
+>>>>>>> 4e2d6a17731bbab0fa5226006add40700c4b7088
         WebDriver driver = new ChromeDriver(co);
 
         driver.get("https://opensource-demo.orangehrmlive.com/");
