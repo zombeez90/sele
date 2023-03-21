@@ -1,5 +1,5 @@
-Feature: Athentication
 
+Feature: Athentication
 
     Scenario: User enters correct credentials 
         When the user enters the correct credentials
@@ -25,7 +25,6 @@ Feature: Athentication
         Then hits reset password button 
         Then user will recive an email to reset their password
 
-           
      Scenario: User is at forgot password page by mistake 
         Given user did not mean to click on forgot password
         When user hits cancel button  
